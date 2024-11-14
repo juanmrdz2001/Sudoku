@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    text-align:center;
+    background: linear-gradient(20deg,#ff8e00,#fccf3c,#d37d37);
+    font-family:Arial,Helvetica,sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    overflow:hidden;
+    min-height:100vh;
+}
+
+h1{
+    font-weight:500;
+    font-size:60px;
+    color:#141212;
+    text-shadow:2px 2px 4px rgba(236, 46, 46, 0.5);
+}
+
+.contenedor{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    box-shadow: 0px 0px 10px rgba(226,49,49,0.9);
+}
+
+.celda{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #979191;
+    transition: all 0.3s ease-in-out;
+}
+
+table{
+    border-collapse: collapse;
+    border: 5px solid #000;
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n+3) td{
+    border-bottom: 3px solid #000;
+}
+
+table td:nth-child(3n){
+    border-right: 3px solid #000;
+}
+
+input{
+    outline:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button{
+    margin:20px;
+    padding:10px 20px;
+    font-size:16px;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#btnResolver{
+    background-color: #6a4d10;
+}
+
+#btnReiniciar{
+    background-color: #f15a2c;
+}
+
+#btnResolver:hover{
+    background-color: #299d0f;
+}
+
+#btnReiniciar:hover{
+    background-color: #ea250b;
+}
+
+.resolverEfecto{
+    background-color: #edd4a0;
+    transition:all 0.2s ease-in-out;
+    float:left;
+}
+
+.entradaUsuario{
+    background-color: #f9f1e9;
+}
+
+footer{
+    background-color: #000;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    padding: 10px 0px;
+    font-size: 12px;
+    color:#f15a2c;
+}
+
